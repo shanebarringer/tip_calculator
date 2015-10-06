@@ -7,7 +7,7 @@ class Ranking
 
   def verify_ranking
     until @rank == 1 || @rank == 2 || @rank == 3
-      puts "invalid ranking... Please try again"
+      puts 'Invalid ranking... Please try again'
       @rank = gets.chomp.to_i
     end
     @rank = rank
@@ -15,14 +15,13 @@ class Ranking
 
   def percentify
     case @rank
-      when 1
-        percentage = 0.20
-      when 2
-        percentage = 0.25
-      when 3
-        percentage = 0.30
+    when 1
+      percentage = 0.20
+    when 2
+      percentage = 0.25
+    when 3
+      percentage = 0.30
     end
-    return percentage
+    percentage
   end
-
 end
