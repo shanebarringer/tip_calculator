@@ -1,8 +1,7 @@
 require_relative 'ranking'
 class Gratuity
-  attr_accessor :total
-  attr_reader :percentage
-  def initialize(total, percentage)
+  attr_accessor :total, :percentage
+  def initialize(total, percentage = nil)
     @total = total
     @percentage = percentage
   end
