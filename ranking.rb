@@ -10,7 +10,7 @@ class Ranking
       puts 'Invalid ranking... Please try again'
       @rank = gets.chomp.to_i
     end
-    @rank = rank
+    self
   end
 
   def percentify

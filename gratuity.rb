@@ -1,9 +1,10 @@
 require_relative 'ranking'
 class Gratuity
   attr_accessor :total, :percentage
-  def initialize(total, percentage = nil)
+
+  def initialize(total, &percentage)
     @total = total
-    @percentage = percentage
+    @percentage = yield(percentage)
   end
 
   def gratify
